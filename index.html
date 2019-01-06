@@ -79,15 +79,17 @@
 }
   </script>
     
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" /><!-- load stylesheets --><noscript id="deferred-styles">
-&lt;link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"&gt;
-&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- load stylesheets -->
+<noscript id='deferred-styles'>
+  <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'/>
+ rel='stylesheet'/>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'/>
     </noscript>
-    
-<script>
+    <script>
       var loadDeferredStyles = function() {
-        var addStylesNode = document.getElementById(&amp;quot;deferred-styles&amp;quot;);
-        var replacement = document.createElement(&amp;quot;div&amp;quot;);
+        var addStylesNode = document.getElementById(&quot;deferred-styles&quot;);
+        var replacement = document.createElement(&quot;div&quot;);
         replacement.innerHTML = addStylesNode.textContent;
         document.body.appendChild(replacement)
         addStylesNode.parentElement.removeChild(addStylesNode);
@@ -95,8 +97,9 @@
       var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
           window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
       if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
-      else window.addEventListener(&amp;#39;load&amp;#39;, loadDeferredStyles);
+      else window.addEventListener(&#39;load&#39;, loadDeferredStyles);
     </script>
+
 <style>
 body,h1 {font-family: "Raleway", Arial, sans-serif}
 h1 {letter-spacing: 6px}
